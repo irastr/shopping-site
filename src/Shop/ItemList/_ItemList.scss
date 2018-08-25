@@ -1,0 +1,19 @@
+.product-card__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  @include reset-list;
+  justify-content: center;
+  padding: 0 96px;
+}
+
+.product-card__item {
+  // flex: 1;
+  // flex-shrink: 0;
+  margin-top: 20px;
+
+  &:not(:nth-child(3n + 3)) {
+    margin-right: 64px;
+  }
+}

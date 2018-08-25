@@ -1,0 +1,5 @@
+.cart-link {
+  cursor: pointer;
+  @include rem(25);
+  color: $white;
+}

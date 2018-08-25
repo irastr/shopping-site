@@ -1,0 +1,14 @@
+.ui--btn {
+  @include ui-reset-btn;
+  background: $brown;
+  color: white;
+  @include rem(14);
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 21px 33px;
+}
+
+.choice__btn {
+  min-width: 196px;
+}

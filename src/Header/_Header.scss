@@ -1,0 +1,15 @@
+.header {
+  padding: 40px 0;
+}
+
+.cantainer--header {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-right {
+  display: flex;
+  align-items: center;
+}
