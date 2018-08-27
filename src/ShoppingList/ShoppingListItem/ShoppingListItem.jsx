@@ -25,7 +25,12 @@ class ShoppingListItem extends Component {
 
   onEditSubmit(event) {
     event.preventDefault();
-    this.props.onEditSubmit(this.nameInput.value, this.priceInput.value);
+    this.props.onEditSubmit(
+      this.nameInput.value,
+      this.priceInput.value,
+      this.props.name
+    );
+    this.setState({ isEdit: false });
   }
 
   render() {
