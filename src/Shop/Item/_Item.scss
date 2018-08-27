@@ -51,7 +51,8 @@
   // border: solid transparent 1px;
 
   &:hover {
-    background-color: $darkbrown;
+    background-color: #610004;
+    transition: background-color 1000ms linear;
     // color: $brown;
     // background-color: white;
     // border: solid $brown 1px;

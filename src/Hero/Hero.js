@@ -5,6 +5,7 @@ import Scroll from "smooth-scroll";
 
 class Hero extends Component {
   componentDidMount() {
+    // eslint-disable-next-line
     let scroll = new Scroll('a[href*="#"]');
   }
   render() {

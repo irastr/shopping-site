@@ -1,0 +1,26 @@
+.shopping-list__add-item-wrap {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.add-item__name {
+  max-width: 300px;
+  margin-right: 30px;
+  // margin-bottom: 10px;
+}
+
+.add-item__quantity {
+  max-width: 100px;
+  margin-right: 30px;
+}
+
+.add-item__btn {
+  color: white;
+  background-color: #586c25;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  max-height: 50px;
+  // width: 200px;
+}

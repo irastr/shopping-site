@@ -10,13 +10,14 @@ const Search = ({ onSearch }) => {
 
     <div class="search__input-wrap">
       <input
+        className="input-search"
         className="search__input"
         type="text"
         required
         onChange={onSearch}
       />
       <span class="bar" />
-      <label>What do you what to find?</label>
+      <label class="search__field">What do you what to find?</label>
     </div>
   );
 };

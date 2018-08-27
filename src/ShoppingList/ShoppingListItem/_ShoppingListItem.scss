@@ -1,0 +1,68 @@
+.shopping-list__edit-wrap {
+  display: flex;
+}
+
+.edit-save-btn {
+  color: white;
+  background-color: #24548d;
+  border-radius: 5px;
+  text-transform: uppercase;
+  //   padding: 1px 20px;
+  outline: none;
+  width: 150px;
+}
+
+.shopping-list__name {
+  width: 300px;
+  display: block;
+  border-bottom: 1px solid $darkbrown;
+  //   border: 1px solid #000000;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  //   line-height: 30px;
+  @include rem(20);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+}
+
+.shopping-list__items-wrap {
+  display: flex;
+}
+
+.shopping-list__quantity {
+  width: 100px;
+  display: block;
+  border-bottom: 1px solid $darkbrown;
+  //   border: 1px solid #000000;
+  text-align: left;
+  margin-bottom: 20px;
+  @include rem(20);
+  margin-right: 30px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+}
+
+.edit-btn {
+  color: white;
+  background-color: #24548d;
+  border-radius: 5px;
+  text-transform: uppercase;
+  //   padding: 1px 20px;
+  outline: none;
+  width: 150px;
+}
+
+.delete-btn {
+  color: white;
+  background-color: #610004;
+  border-radius: 5px;
+  text-transform: uppercase;
+  //   padding: 1px 20px;
+  outline: none;
+  width: 150px;
+}

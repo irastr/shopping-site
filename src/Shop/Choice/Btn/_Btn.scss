@@ -7,6 +7,10 @@
   text-transform: uppercase;
   border-radius: 3px;
   padding: 21px 33px;
+  &:hover {
+    background-color: #610004;
+    transition: background-color 1000ms linear;
+  }
 }
 
 .choice__btn {

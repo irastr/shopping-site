@@ -4,7 +4,7 @@
   margin-top: 30px;
 }
 
-input {
+input[type="text"] {
   font-size: 16px;
   padding: 10px;
   display: block;
@@ -14,11 +14,11 @@ input {
   background-color: $lightbrown;
 }
 
-input:focus {
+input[type="text"]:focus {
   outline: none;
 }
 
-label {
+label.search__field {
   color: #999;
   font-size: 18px;
   position: absolute;
@@ -31,8 +31,8 @@ label {
 }
 
 /* active state */
-input:focus ~ label,
-input:valid ~ label {
+input[type="text"]:focus ~ label,
+input[type="text"]:valid ~ label {
   top: -15px;
   font-size: 14px;
   color: $brown;
@@ -62,7 +62,7 @@ input:valid ~ label {
 
 /* active state */
 
-input:focus ~ .bar:before,
-input:focus ~ .bar:after {
+input[type="text"]:focus ~ .bar:before,
+input[type="text"]:focus ~ .bar:after {
   width: 50%;
 }

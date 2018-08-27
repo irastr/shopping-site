@@ -38,25 +38,38 @@ class ShoppingListItem extends Component {
     return (
       <div>
         {this.state.isEdit ? (
-          <form onSubmit={this.onEditSubmit}>
+          <form
+            onSubmit={this.onEditSubmit}
+            className="shopping-list__edit-wrap"
+          >
             {" "}
             <input
+              className="shopping-list__name"
+              // className="add-item__name"
               placeholder="Name"
               ref={nameInput => (this.nameInput = nameInput)}
               defaultValue={name}
             />
             <input
+              className="shopping-list__quantity"
               placeholder="Price"
               ref={priceInput => (this.priceInput = priceInput)}
               defaultValue={price}
             />
-            <button>Save</button>
+            <button className="edit-save-btn">
+              <i class="fas fa-save" /> Save
+            </button>
           </form>
         ) : (
-          <div>
-            <span>{name}</span> | <span>{price}</span>
-            <button onClick={this.onEdit}>Edit</button>
-            <button onClick={this.onDelete}>Delete</button>
+          <div className="shopping-list__items-wrap">
+            <span className="shopping-list__name">{name}</span>
+            <span className="shopping-list__quantity">{price}</span>
+            <button onClick={this.onEdit} className="edit-btn">
+              <i class="fas fa-pencil-alt" /> Edit
+            </button>
+            <button onClick={this.onDelete} className="delete-btn">
+              <i class="fas fa-trash-alt" /> Delete
+            </button>
           </div>
         )}
       </div>

@@ -16,18 +16,43 @@ class AddItem extends Component {
   }
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
-        <h3>Add Product</h3>
-        <input
+      <form onSubmit={this.onSubmit} className="shopping-list__add-item-wrap">
+        <hr />
+        {/* <h3>Add Product</h3> */}
+        {/* <input
+          className="add-item__name"
           placeholder="Name"
           ref={nameInput => (this.nameInput = nameInput)}
-        />
-        <input
-          placeholder="Price"
-          ref={priceInput => (this.priceInput = priceInput)}
-        />
-        <button>Add</button>
-        <hr />
+        /> */}
+
+        <div class="search__input-wrap">
+          <input
+            className="input-search"
+            className="search__input"
+            type="text"
+            required
+            ref={nameInput => (this.nameInput = nameInput)}
+          />
+          <span class="bar" />
+          <label class="search__field  ">What do you what to add?</label>
+        </div>
+
+        <div class="search__input-wrap quantity-input-wrap">
+          <input
+            className="input-search"
+            className="search__input"
+            type="text"
+            required
+            ref={priceInput => (this.priceInput = priceInput)}
+          />
+          <span class="bar" />
+          <label class="search__field">How many?</label>
+        </div>
+
+        <button className="add-item__btn ui-btn">
+          <i class="fas fa-plus" /> Add new product
+        </button>
+        {/* <hr /> */}
       </form>
     );
   }

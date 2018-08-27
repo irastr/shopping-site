@@ -71,22 +71,24 @@ class ShoppingList extends Component {
 
   render() {
     return (
-      <div className="sopping-list-wrap">
-        <h1 className="sopping-list__title">Make your shopping list!</h1>
+      <section className="shopping-list">
+        <div className="shopping-list-wrap">
+          <h1 className="shopping-list__title">Make your shopping list!</h1>
 
-        <AddItem onAdd={this.onAdd} />
-        {this.state.products.map(product => {
-          return (
-            <ShoppingListItem
-              key={product.name}
-              name={product.name}
-              price={product.price}
-              onDelete={this.onDelete}
-              onEditSubmit={this.onEditSubmit}
-            />
-          );
-        })}
-      </div>
+          {this.state.products.map(product => {
+            return (
+              <ShoppingListItem
+                key={product.name}
+                name={product.name}
+                price={product.price}
+                onDelete={this.onDelete}
+                onEditSubmit={this.onEditSubmit}
+              />
+            );
+          })}
+          <AddItem onAdd={this.onAdd} />
+        </div>
+      </section>
     );
   }
 }

@@ -1,4 +1,32 @@
 .footer {
   background-color: #424242;
-  height: 300px;
+  // height: 300px;
+}
+
+.footer__column-right {
+  display: flex;
+  max-width: 305px;
+  flex-direction: column;
+}
+
+.container--footer {
+  @include container;
+  display: flex;
+  flex: 1 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__nav-list {
+  display: flex;
+  @include reset-list;
+}
+
+.footer__nav-link {
+  text-decoration: none;
+}
+.footer__nav-item {
+  &:not(:last-child) {
+    margin-right: 17px;
+  }
 }
