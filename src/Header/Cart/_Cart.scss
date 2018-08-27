@@ -2,4 +2,25 @@
   cursor: pointer;
   @include rem(25);
   color: $white;
+  position: relative;
+}
+
+.cart-counter {
+  position: absolute;
+  left: 50px;
+  top: 10px;
+  bottom: 0;
+  right: 0;
+
+  background-color: red;
+  padding: 10px;
+  border-radius: 100px;
+  line-height: 10px;
+  @include rem(15);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 30px;
+  width: 30px;
 }

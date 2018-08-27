@@ -43,6 +43,7 @@
     "react-router-hash-link": "^1.2.0",
     "react-slick": "^0.23.1",
     "react-sticky-footer": "0.1.0-rc3",
+    "react-sticky-header": "^0.1.9",
     "resolve": "1.6.0",
     "slick-carousel": "^1.8.1",
     "smooth-scroll": "^14.2.1",

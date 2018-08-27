@@ -1,0 +1,29 @@
+.cart__list {
+  @include reset-list;
+}
+
+.cart__item {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.total-price {
+  @include rem(30);
+  font-weight: bold;
+}
+
+.total-price-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.cart-page-wrap {
+  max-height: 700px;
+  // min-height: 300px;
+  overflow: scroll;
+  padding-right: 30px;
+}

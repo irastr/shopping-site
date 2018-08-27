@@ -33,7 +33,8 @@ class Testimonials extends Component {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      arrows: true
+      arrows: true,
+      centerMode: true
     };
 
     // var settings = {
@@ -48,16 +49,13 @@ class Testimonials extends Component {
             <div className="testimonials__icon">
               <i className="fas fa-quote-left" />
             </div>
-            <div className="wrap-wrap">
-              <div className="testimonials__img-wrap">
-                <img src={testOne} className="testimonials__img" alt="" />
-                {/* <p className="testimonials__content"> */}
-              </div>
+            <div className="testimonials__img-wrap">
+              <img src={testOne} className="testimonials__img" alt="" />
+              {/* <p className="testimonials__content"> */}
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores reprehenderit numquam quos repellat est accusamus
-              itaque suscipit.
+              Asperiores reprehenderit
             </p>
             <span className="testimonials__name">Ira Strikun </span> <br />
             <span className="testimonials__position"> CEO </span>
@@ -74,8 +72,7 @@ class Testimonials extends Component {
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores reprehenderit numquam quos repellat est accusamus
-              itaque suscipit. Saepe atque tenetur voluptate sequi.
+              Asperiores reprehenderit numquam
             </p>
             <span className="testimonials__name">Ira Strikun </span> <br />
             <span className="testimonials__position"> CEO </span>
@@ -92,8 +89,7 @@ class Testimonials extends Component {
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores reprehenderit numquam quos repellat est accusamus
-              itaque suscipit.
+              Asperiores reprehenderit numquam quos
             </p>
             <span className="testimonials__name">Ira Strikun </span> <br />
             <span className="testimonials__position"> CEO </span>
@@ -109,8 +105,7 @@ class Testimonials extends Component {
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores reprehenderit numquam quos repellat est accusamus
-              itaque suscipit.
+              Asperiores reprehenderit numquam quos
             </p>
             <span className="testimonials__name">Ira Strikun </span> <br />
             <span className="testimonials__position"> CEO </span>
@@ -126,8 +121,7 @@ class Testimonials extends Component {
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores reprehenderit numquam quos repellat est accusamus
-              itaque suscipit.
+              Asperiores reprehenderit
             </p>
             <span className="testimonials__name">Ira Strikun </span> <br />
             <span className="testimonials__position"> CEO </span>

@@ -1,7 +1,8 @@
 import React from "react";
 import Btn from "./Btn/Btn";
+import Search from "./Search/Search";
 
-const Choice = ({ onBtnClick, onCheck, defaultChecked }) => {
+const Choice = ({ onBtnClick, onCheck, defaultChecked, onSearch }) => {
   return (
     <div className="choice-wrap">
       <div className="checkbox-wrap">
@@ -32,6 +33,7 @@ const Choice = ({ onBtnClick, onCheck, defaultChecked }) => {
         </label>
       </div>
       {onBtnClick}
+      <Search onSearch={onSearch} />
 
       <Btn onBtnClick={onBtnClick} />
     </div>

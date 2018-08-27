@@ -7,7 +7,12 @@ const ItemList = props => {
     <ul className="product-card__list">
       {props.items.map(item => (
         <li key={item.id} className="product-card__item">
-          <Item item={item} onAddToCart={props.onAddToCart} />
+          <Item
+            item={item}
+            onAddToCart={props.onAddToCart}
+            onAddToCartChangeContent={props.onAddToCartChangeContent}
+            btnContent={props.btnContent}
+          />
         </li>
       ))}
     </ul>

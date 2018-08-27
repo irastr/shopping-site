@@ -11,21 +11,24 @@ export let data = [
     name: "t-shirt",
     price: 5.0,
     img: tShirt,
-    type: "men"
+    type: "men",
+    added: false
   },
   {
     id: 1,
     name: "pants forclaz",
     price: 30.0,
     img: pants,
-    type: "men"
+    type: "men",
+    added: false
   },
   {
     id: 2,
     name: "backpack",
     price: 70.0,
     img: backpack,
-    type: "men"
+    type: "men",
+    added: false
   },
   {
     id: 3,

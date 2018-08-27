@@ -19,5 +19,8 @@
 @import "../../Testimonials/Testimonials";
 @import "../../Footer/Footer";
 
-@import "../../Header/Cart/Modal/CartPage/CartPage";
-@import "../../Header/Cart/Modal/CartPage/CartItem/CartItem";
+@import "../../EmptyCart/EmptyCart";
+
+@import "../../CartPage/CartPage";
+@import "../../CartPage/CartItem/CartItem";
+@import "../../Shop/Choice/Search/Search";

@@ -10,11 +10,31 @@ class Shop extends Component {
     data: [],
     checkedMen: false,
     checkedWomen: false
+    // buttonContent: "add to cart"
   };
 
   componentDidMount() {
     this.setState({ data: [...data] });
   }
+
+  handleSearch = event => {
+    console.log(event);
+    let searchQuery = event.target.value.toLowerCase();
+    let displayedList = data.filter(function(item) {
+      let searchValue = item.name.toLowerCase();
+      return searchValue.indexOf(searchQuery) !== -1;
+    });
+
+    this.setState({
+      data: [...displayedList]
+    });
+  };
+
+  // handleChangeBtnContent = item => {
+  //   this.setState({
+  //     buttonContent: "added"
+  //   });
+  // };
 
   handleBtnClick = (category = "all") => {
     if (category === "all") {
@@ -74,11 +94,14 @@ class Shop extends Component {
           onBtnClick={this.handleBtnClick}
           onCheck={this.handleCheck}
           defaultChecked={this.state.checked}
+          onSearch={this.handleSearch}
         />
         <main className="shop__content">
           <ItemList
             items={this.state.data}
             onAddToCart={this.props.onAddToCart}
+            // onAddToCartChangeContent={this.handleChangeBtnContent}
+            // btnContent={this.state.buttonContent}
           />
         </main>
       </section>

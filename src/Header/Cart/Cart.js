@@ -30,9 +30,11 @@ class Cart extends Component {
           {/* <button onClick={this.onOpenModal}>Open modal</button> */}
           <a className="cart-link" onClick={this.onOpenModal}>
             <i className="fas fa-shopping-cart" />
+            CART
+            <span className="cart-counter"> {this.props.cartQuantity} </span>
           </a>
           <Modal open={open} onClose={this.onCloseModal} center>
-            <main className="App-content">{this.props.renderContent} </main>
+            <main className="modal-content">{this.props.renderCart} </main>
           </Modal>
         </div>
       </React.Fragment>
