@@ -9,7 +9,8 @@ class Shop extends Component {
     // activeBtn: 0,
     data: [],
     checkedMen: false,
-    checkedWomen: false
+    checkedWomen: false,
+    found: true
     // buttonContent: "add to cart"
   };
 
@@ -25,16 +26,21 @@ class Shop extends Component {
       return searchValue.indexOf(searchQuery) !== -1;
     });
 
+    // if (displayedList.length !== 0) {
     this.setState({
       data: [...displayedList]
     });
-  };
+    // } else {
+    //   // console.log("heh");
+    //   // this.setState({
 
-  // handleChangeBtnContent = item => {
-  //   this.setState({
-  //     buttonContent: "added"
-  //   });
-  // };
+    //   // });
+
+    //   this.setState(prevState => {
+    //     return { found: !this.state.found };
+    //   });
+    // }
+  };
 
   handleBtnClick = (category = "all") => {
     if (category === "all") {
@@ -100,6 +106,7 @@ class Shop extends Component {
           <ItemList
             items={this.state.data}
             onAddToCart={this.props.onAddToCart}
+            found={this.state.found}
             // onAddToCartChangeContent={this.handleChangeBtnContent}
             // btnContent={this.state.buttonContent}
           />

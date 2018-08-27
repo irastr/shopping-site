@@ -16,8 +16,8 @@ const Search = ({ onSearch }) => {
         required
         onChange={onSearch}
       />
-      <span class="bar" />
-      <label class="search__field">What do you what to find?</label>
+      <span className="bar" />
+      <label className="search__field">What do you what to find?</label>
     </div>
   );
 };

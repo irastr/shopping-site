@@ -3,14 +3,14 @@ import ShoppingListItem from "./ShoppingListItem/ShoppingListItem";
 import AddItem from "./AddItem/AddItem";
 
 const products = [
-  {
-    name: "iPad",
-    price: 200
-  },
-  {
-    name: "iPhone",
-    price: 20
-  }
+  // {
+  //   name: "iPad",
+  //   price: 200
+  // },
+  // {
+  //   name: "iPhone",
+  //   price: 20
+  // }
 ];
 
 localStorage.setItem("products", JSON.stringify(products));

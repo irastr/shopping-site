@@ -25,28 +25,32 @@ class AddItem extends Component {
           ref={nameInput => (this.nameInput = nameInput)}
         /> */}
 
-        <div class="search__input-wrap">
-          <input
-            className="input-search"
-            className="search__input"
-            type="text"
-            required
-            ref={nameInput => (this.nameInput = nameInput)}
-          />
-          <span class="bar" />
-          <label class="search__field  ">What do you what to add?</label>
+        <div className="name-input-wrap">
+          <div class="search__input-wrap">
+            <input
+              className="input-search"
+              className="search__input"
+              type="text"
+              required
+              ref={nameInput => (this.nameInput = nameInput)}
+            />
+            <span class="bar" />
+            <label class="search__field  ">What do you what to add?</label>
+          </div>
         </div>
 
-        <div class="search__input-wrap quantity-input-wrap">
-          <input
-            className="input-search"
-            className="search__input"
-            type="text"
-            required
-            ref={priceInput => (this.priceInput = priceInput)}
-          />
-          <span class="bar" />
-          <label class="search__field">How many?</label>
+        <div className="search-input-wrap">
+          <div class="search__input-wrap quantity-input-wrap">
+            <input
+              className="input-search"
+              className="search__input"
+              type="text"
+              required
+              ref={priceInput => (this.priceInput = priceInput)}
+            />
+            <span class="bar" />
+            <label class="search__field">How many?</label>
+          </div>
         </div>
 
         <button className="add-item__btn ui-btn">
