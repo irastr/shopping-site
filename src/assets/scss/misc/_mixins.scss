@@ -58,14 +58,14 @@
   }
 }
 
-@mixin extra-large-large-medium {
-  @media screen and (max-width: $extra-large-large) {
+@mixin super-large {
+  @media screen and (max-width: $super-large) {
     @content;
   }
 }
 
-@mixin super-large {
-  @media screen and (max-width: $super-large) {
+@mixin mega-large {
+  @media screen and (max-width: $mega-large) {
     @content;
   }
 }

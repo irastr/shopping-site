@@ -4,6 +4,10 @@
   // opacity: 60%;
   background-color: $brown;
   // opacity: 0.8;
+
+  @include extra-large {
+    padding: 20px 30px;
+  }
 }
 
 .cantainer--header {

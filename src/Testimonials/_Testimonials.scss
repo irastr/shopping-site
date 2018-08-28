@@ -3,6 +3,10 @@
 
   // background-color: $lightbrown;
   background-color: $brown;
+
+  @include medium {
+    padding: 20px 50px;
+  }
 }
 
 .testimonials__content {

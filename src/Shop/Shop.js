@@ -10,6 +10,7 @@ class Shop extends Component {
     data: [],
     checkedMen: false,
     checkedWomen: false,
+    checkedKids: false,
     found: true
     // buttonContent: "add to cart"
   };

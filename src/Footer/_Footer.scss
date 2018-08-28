@@ -2,6 +2,11 @@
   background-color: #424242;
   color: #fff;
   // height: 300px;
+
+  @include extra-large {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 .footer__column-right {
@@ -60,6 +65,9 @@
   text-transform: uppercase;
   font-weight: 400;
   @include rem(20);
+  @include small {
+    display: none;
+  }
 }
 
 .footer__descr {
@@ -67,8 +75,20 @@
   font-weight: 400;
   @include rem(10);
   text-transform: uppercase;
+  margin-right: 20px;
+
+  @include small {
+    display: none;
+  }
 }
 
 .footer__design {
   // color: #610004;
+}
+
+.footer__column-left {
+  @include medium {
+    padding-right: 30px;
+    @include rem(15);
+  }
 }

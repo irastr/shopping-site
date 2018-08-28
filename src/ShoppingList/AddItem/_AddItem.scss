@@ -2,6 +2,10 @@
   display: flex;
   margin-top: 40px;
   align-items: center;
+
+  @include large {
+    flex-direction: column;
+  }
 }
 
 .add-item__name {

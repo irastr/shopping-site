@@ -76,3 +76,11 @@
   background-color: $lightbrown;
   margin-bottom: 50px;
 }
+
+.choice-wrap {
+  @include large {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

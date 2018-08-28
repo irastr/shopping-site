@@ -34,7 +34,19 @@ class Testimonials extends Component {
       slidesToScroll: 1,
       autoplay: true,
       arrows: true,
-      centerMode: true
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: true,
+            infinite: true,
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            swipeToSlide: true
+          }
+        }
+      ]
     };
 
     // var settings = {

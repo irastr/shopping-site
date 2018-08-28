@@ -11,6 +11,34 @@
 
 .nav {
   margin-right: 54px;
+
+  @include medium {
+    display: none;
+  }
+}
+
+.nav--mobile {
+  flex-direction: column;
+}
+
+.nav__list--mobile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  @include reset-list;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 70px;
+  text-align: center;
+
+  margin-right: 0;
+  background-color: #610004;
+}
+
+.nav__item--mobile {
+  padding: 20px;
 }
 
 .nav__link {
@@ -18,6 +46,28 @@
   color: $white;
   font-weight: 400;
   @include rem(18);
+
+  &:hover {
+    color: #610004;
+    transition: color 1000ms linear;
+  }
+}
+
+.nav__link-mobile {
+  text-decoration: none;
+  color: $white;
+  font-weight: 400;
+  @include rem(18);
+}
+
+.nav__burger {
+  display: none;
+  @include medium {
+    display: block;
+  }
+  margin-right: 20px;
+  color: white;
+  @include rem(25);
 
   &:hover {
     color: #610004;

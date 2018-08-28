@@ -1,5 +1,8 @@
 .shopping-list__edit-wrap {
   display: flex;
+  @include large {
+    flex-direction: column;
+  }
 }
 
 .edit-save-btn {
@@ -30,6 +33,9 @@
 
 .shopping-list__items-wrap {
   display: flex;
+  @include large {
+    flex-direction: column;
+  }
 }
 
 .shopping-list__quantity {
