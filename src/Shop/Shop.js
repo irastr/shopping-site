@@ -26,10 +26,18 @@ class Shop extends Component {
       return searchValue.indexOf(searchQuery) !== -1;
     });
 
-    // if (displayedList.length !== 0) {
-    this.setState({
-      data: [...displayedList]
-    });
+    if (displayedList.length !== 0) {
+      this.setState({
+        data: [...displayedList]
+      });
+      this.setState(prevState => {
+        return { found: true };
+      });
+    } else {
+      this.setState(prevState => {
+        return { found: false };
+      });
+    }
     // } else {
     //   // console.log("heh");
     //   // this.setState({
@@ -43,6 +51,10 @@ class Shop extends Component {
   };
 
   handleBtnClick = (category = "all") => {
+    this.setState(prevState => {
+      return { found: true };
+    });
+
     if (category === "all") {
       this.setState({ data: [...data] });
       return;

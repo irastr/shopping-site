@@ -58,6 +58,18 @@
   }
 }
 
+@mixin extra-large-large-medium {
+  @media screen and (max-width: $extra-large-large) {
+    @content;
+  }
+}
+
+@mixin super-large {
+  @media screen and (max-width: $super-large) {
+    @content;
+  }
+}
+
 @mixin rem($size) {
   font-size: $size / $basic-font-size + rem;
 }

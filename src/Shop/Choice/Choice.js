@@ -26,11 +26,11 @@ const Choice = ({ onBtnClick, onCheck, defaultChecked, onSearch }) => {
           <span className="checkmark" />
         </label>
 
-        <label className="label-container">
+        {/* <label className="label-container">
           Kids
           <input type="checkbox" />
           <span className="checkmark" />
-        </label>
+        </label> */}
       </div>
       {onBtnClick}
       <Search onSearch={onSearch} />
