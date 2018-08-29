@@ -49,9 +49,6 @@ class Testimonials extends Component {
       ]
     };
 
-    // var settings = {
-    //   dots: true
-    // };
     return (
       <div className="section-testimonials">
         <h3 className="testimonials__title">About us</h3>
@@ -63,7 +60,6 @@ class Testimonials extends Component {
             </div>
             <div className="testimonials__img-wrap">
               <img src={testOne} className="testimonials__img" alt="" />
-              {/* <p className="testimonials__content"> */}
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -71,7 +67,6 @@ class Testimonials extends Component {
             </p>
             <span className="testimonials__name">Ira Strikun </span> <br />
             <span className="testimonials__position"> CEO </span>
-            {/* <span className="testimonials__name">Freelance </span> */}
           </div>
 
           <div className="testimonials__content">
@@ -80,7 +75,6 @@ class Testimonials extends Component {
             </div>
             <div className="testimonials__img-wrap">
               <img src={testTwo} className="testimonials__img" alt="" />
-              {/* <p className="testimonials__content"> */}
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -88,7 +82,6 @@ class Testimonials extends Component {
             </p>
             <span className="testimonials__name">Ira Strikun </span> <br />
             <span className="testimonials__position"> CEO </span>
-            {/* <span className="testimonials__name">Freelance </span> */}
           </div>
 
           <div className="testimonials__content">
@@ -97,7 +90,6 @@ class Testimonials extends Component {
             </div>
             <div className="testimonials__img-wrap">
               <img src={testThree} className="testimonials__img" alt="" />
-              {/* <p className="testimonials__content"> */}
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -105,7 +97,6 @@ class Testimonials extends Component {
             </p>
             <span className="testimonials__name">Ira Strikun </span> <br />
             <span className="testimonials__position"> CEO </span>
-            {/* <span className="testimonials__name">Freelance </span> */}
           </div>
           <div className="testimonials__content">
             <div className="testimonials__icon">
@@ -113,7 +104,6 @@ class Testimonials extends Component {
             </div>
             <div className="testimonials__img-wrap">
               <img src={testThree} className="testimonials__img" alt="" />
-              {/* <p className="testimonials__content"> */}
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -121,7 +111,6 @@ class Testimonials extends Component {
             </p>
             <span className="testimonials__name">Ira Strikun </span> <br />
             <span className="testimonials__position"> CEO </span>
-            {/* <span className="testimonials__name">Freelance </span> */}
           </div>
           <div className="testimonials__content">
             <div className="testimonials__icon">
@@ -129,7 +118,6 @@ class Testimonials extends Component {
             </div>
             <div className="testimonials__img-wrap">
               <img src={testThree} className="testimonials__img" alt="" />
-              {/* <p className="testimonials__content"> */}
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -137,7 +125,6 @@ class Testimonials extends Component {
             </p>
             <span className="testimonials__name">Ira Strikun </span> <br />
             <span className="testimonials__position"> CEO </span>
-            {/* <span className="testimonials__name">Freelance </span> */}
           </div>
         </Slider>
       </div>

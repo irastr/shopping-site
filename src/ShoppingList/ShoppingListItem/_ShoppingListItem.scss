@@ -10,7 +10,7 @@
   background-color: #24548d;
   border-radius: 5px;
   text-transform: uppercase;
-  //   padding: 1px 20px;
+
   outline: none;
   width: 150px;
 }
@@ -19,11 +19,11 @@
   width: 300px;
   display: block;
   border-bottom: 1px solid $darkbrown;
-  //   border: 1px solid #000000;
+
   text-align: left;
   margin-bottom: 20px;
   margin-right: 30px;
-  //   line-height: 30px;
+
   @include rem(20);
   border-top: none;
   border-right: none;
@@ -42,7 +42,7 @@
   width: 100px;
   display: block;
   border-bottom: 1px solid $darkbrown;
-  //   border: 1px solid #000000;
+
   text-align: left;
   margin-bottom: 20px;
   @include rem(20);
@@ -61,6 +61,7 @@
   //   padding: 1px 20px;
   outline: none;
   width: 150px;
+  cursor: pointer;
 }
 
 .delete-btn {
@@ -71,4 +72,5 @@
   //   padding: 1px 20px;
   outline: none;
   width: 150px;
+  cursor: pointer;
 }

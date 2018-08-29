@@ -45,7 +45,6 @@ class ShoppingListItem extends Component {
             {" "}
             <input
               className="shopping-list__name"
-              // className="add-item__name"
               placeholder="Name"
               ref={nameInput => (this.nameInput = nameInput)}
               defaultValue={name}

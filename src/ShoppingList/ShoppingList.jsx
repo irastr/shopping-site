@@ -47,17 +47,15 @@ class ShoppingList extends Component {
   }
 
   onDelete(name) {
-    // console.log(name);
     const products = this.getProducts();
     const filteredProducts = products.filter(product => {
       return product.name !== name;
     });
-    // console.log(filteredProducts);
+
     this.setState({ products: filteredProducts });
   }
 
   onEditSubmit(name, price, originalName) {
-    // console.log(name, price);
     let products = this.getProducts();
     products = products.map(product => {
       if (product.name === originalName) {
