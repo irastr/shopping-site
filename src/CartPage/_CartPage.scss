@@ -8,6 +8,10 @@
   width: 700px;
   border-bottom: 1px solid #ccc;
   padding: 20px 0;
+  @include small {
+    width: 300px;
+    flex-direction: column;
+  }
 }
 
 .total-price {
