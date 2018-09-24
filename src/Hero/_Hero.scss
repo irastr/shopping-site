@@ -54,6 +54,9 @@
   font-weight: 400;
   margin: 0;
   opacity: 0.6;
+  @include small {
+    @include rem(16);
+  }
 }
 
 .hero_title {
@@ -61,6 +64,9 @@
   @include rem(60);
   font-weight: 700;
   margin: 0 0 14px 0;
+  @include small {
+    @include rem(20);
+  }
 }
 
 .slider-wrap {
